@@ -3,9 +3,7 @@ const path = require('path');
 
 const config = {
   entry: {
-    app: './client/index.js',
-    //favorites: './client/favorites.js',
-    //topic: './topic.js',
+    app: './public/index.js',
   },
   output: {
     path: __dirname + '/dist',
