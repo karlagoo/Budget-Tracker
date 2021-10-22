@@ -6,7 +6,7 @@ const indexedDB =
   window.shimIndexedDB;
 
 let db;
-const request = indexedDB.open("budget", 1);
+const request = indexedDB.open("budgetApp", 1);
 
 request.onupgradeneeded = ({ target }) => {
   let db = target.result;
@@ -22,7 +22,7 @@ request.onsuccess = ({ target }) => {
 };
 
 request.onerror = function(event) {
-  console.log("Uh oh: " + event.target.errorCode);
+  console.log("Error " + event.target.errorCode);
 };
 
 function saveRecord(record) {
