@@ -1,21 +1,12 @@
 {
   "name": "budget-app",
   "version": "1.0.0",
-  "engines": {
-    "node": "14.17.3"
-  },
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite-server": "lite-server",
     "start": "node server.js",
-    "start:prod": "npm run build && node server.js",
-    "start:dev": "concurrently \"npm run server\" \"cd client && npm run start\"",
-    "server": "nodemon server.js --ignore client",
-    "build": "cd client && npm run build",
-    "install": "cd client && npm install",
-    "client": "cd client && npm start"
+    "lite-server": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -32,11 +23,6 @@
     "express": "^4.17.1",
     "lite-server": "^2.5.3",
     "mongoose": "^5.5.15",
-    "morgan": "^1.9.1",
-    "webpack-pwa-manifest": "^4.3.0"
-  },
-  "devDependencies": {
-    "concurrently": "^5.2.0",
-    "nodemon": "^2.0.4"
+    "morgan": "^1.9.1"
   }
 }
